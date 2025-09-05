@@ -3,64 +3,79 @@ import type { AdminHeader, MenuItem } from "@/types/factory";
 // 主菜单配置（用于Header组件）
 export const defaultMenuItems: MenuItem[] = [
   {
-    id: 'index',
-    label: 'menu.index',
-    href: '/',
+    id: "index",
+    label: "menu.index",
+    href: "/",
     icon: null,
     hide: false,
   },
   {
-    id: 'knowledge',
-    label: '知识库',
-    href: '/knowledge',
+    id: "analyze",
+    label: "情感分析",
+    href: "/analyze",
     icon: null,
   },
   {
-    id: 'templates',
-    label: 'menu.templates',
-    href: '/templates',
-    children: [
-      {
-        id: 'dashboard',
-        label: 'dashboard',
-        href: '/templates/dashboard'
-      },
-      {
-        id: 'analytics',
-        label: 'analytics',
-        href: '/templates/analytics'
-      },
-      {
-        id: 'knowledge',
-        label: 'knowledge',
-        href: '/templates/knowledge'
-      },
-      {
-        id: 'stats',
-        label: 'stats',
-        href: '/templates/stats'
-      },
-      {
-        id: 'websocket',
-        label: 'websocket',
-        href: '/templates/websocket'
-      },
-    ]
+    id: "history",
+    label: "分析历史",
+    href: "/history",
+    icon: null,
+    hide: false,
   },
   {
-    id: 'system_film',
-    label: 'menu.system_film',
-    href: '/user/system_film',
+    id: "knowledge",
+    label: "知识库",
+    href: "/knowledge",
+    icon: null,
+    hide: true,
+  },
+  {
+    id: "templates",
+    label: "menu.templates",
+    href: "/templates",
+    hide: true,
+    children: [
+      {
+        id: "dashboard",
+        label: "dashboard",
+        href: "/templates/dashboard",
+      },
+      {
+        id: "analytics",
+        label: "analytics",
+        href: "/templates/analytics",
+      },
+      {
+        id: "knowledge",
+        label: "knowledge",
+        href: "/templates/knowledge",
+      },
+      {
+        id: "stats",
+        label: "stats",
+        href: "/templates/stats",
+      },
+      {
+        id: "websocket",
+        label: "websocket",
+        href: "/templates/websocket",
+      },
+    ],
+  },
+  {
+    id: "system_film",
+    label: "menu.system_film",
+    href: "/user/system_film",
     hide: true,
     icon: null,
   },
   {
-    id: 'admin',
-    label: 'menu.admin',
-    href: '/admin',
+    id: "admin",
+    label: "menu.admin",
+    href: "/admin",
     icon: null,
   },
-]
+];
 
 // 管理后台菜单配置
 export const adminMenuItems: AdminHeader[] = [
@@ -96,6 +111,7 @@ export const adminMenuItems: AdminHeader[] = [
     title: "知识管理",
     icon: "Compass",
     path: "/admin/knowledge",
+    hide: true,
   },
   {
     id: "6",
@@ -119,11 +135,11 @@ export const adminMenuItems: AdminHeader[] = [
     ],
   },
   {
-    id: '8',
-    title: 'AI 助手',
-    icon: 'ChatDotRound',
-    path: '/admin/ai',
-    hide: true
+    id: "8",
+    title: "AI 助手",
+    icon: "ChatDotRound",
+    path: "/admin/ai",
+    hide: true,
   },
   {
     id: "10",

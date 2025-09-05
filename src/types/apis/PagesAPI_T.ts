@@ -54,19 +54,39 @@ export interface BatchAnalyzeResponse {
   };
 }
 
+// 历史记录项
 export interface HistoryRecord {
   id: number;
   username: string;
-  analysis_type: string;
+  analysis_type: 'single' | 'batch';
   created_at: string;
   updated_at: string;
-  file_name: string | null;
+  file_name?: string;
   total_count: number;
   positive_count: number;
   negative_count: number;
   neutral_count: number;
-  comment_text: string | null;
-  sentiment: string;
+  comment_text?: string;
+  sentiment: string; // 注意：历史记录中使用 sentiment 而不是 hzsystem_sentiment
+  confidence: number;
+  keywords: string[];
+  details: any[];
+}
+
+// 分析详情项（与历史记录类似，也使用 sentiment 字段）
+export interface AnalysisDetail {
+  id: number;
+  username: string;
+  analysis_type: 'single' | 'batch';
+  created_at: string;
+  updated_at: string;
+  file_name?: string;
+  total_count: number;
+  positive_count: number;
+  negative_count: number;
+  neutral_count: number;
+  comment_text?: string;
+  sentiment: string; // 详情接口也使用 sentiment
   confidence: number;
   keywords: string[];
   details: any[];

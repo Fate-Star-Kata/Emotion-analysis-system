@@ -41,6 +41,7 @@ declare module 'vue-router/auto-routes' {
     '/templates/knowledge': RouteRecordInfo<'/templates/knowledge', '/templates/knowledge', Record<never, never>, Record<never, never>>,
     '/templates/stats': RouteRecordInfo<'/templates/stats', '/templates/stats', Record<never, never>, Record<never, never>>,
     '/templates/websocket': RouteRecordInfo<'/templates/websocket', '/templates/websocket', Record<never, never>, Record<never, never>>,
+    '/user/analyze/': RouteRecordInfo<'/user/analyze/', '/user/analyze', Record<never, never>, Record<never, never>>,
     '/user/history/': RouteRecordInfo<'/user/history/', '/user/history', Record<never, never>, Record<never, never>>,
     '/user/knowledge/': RouteRecordInfo<'/user/knowledge/', '/user/knowledge', Record<never, never>, Record<never, never>>,
     '/user/notifications/': RouteRecordInfo<'/user/notifications/', '/user/notifications', Record<never, never>, Record<never, never>>,
@@ -149,6 +150,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/templates/websocket.vue': {
       routes: '/templates/websocket'
+      views: never
+    }
+    'src/pages/user/analyze/index.vue': {
+      routes: '/user/analyze/'
       views: never
     }
     'src/pages/user/history/index.vue': {
