@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto">
       <!-- 页面标题 -->
       <div class="text-center mb-8">
-        <h1 class="text-3xl font-bold text-gray-800 mb-2">情绪分析</h1>
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">金融情绪分析</h1>
         <p class="text-gray-600">输入文字或上传CSV文件进行情感分析</p>
       </div>
 

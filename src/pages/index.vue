@@ -6,13 +6,13 @@
       <div class="text-center space-y-6 mb-8">
         <RevealMotion :delay="0">
           <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
-            情绪分析系统
+            金融情绪分析系统
           </h1>
         </RevealMotion>
 
         <RevealMotion :delay="0.1">
           <p class="text-lg md:text-xl opacity-70">
-            基于AI的情绪分析平台
+            基于AI的金融情绪分析平台
           </p>
         </RevealMotion>
 
