@@ -6,13 +6,13 @@
       <div class="text-center space-y-6 mb-8">
         <RevealMotion :delay="0">
           <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
-            赫兹系统
+            情绪分析系统
           </h1>
         </RevealMotion>
 
         <RevealMotion :delay="0.1">
           <p class="text-lg md:text-xl opacity-70">
-            项目介绍
+            基于AI的情绪分析平台
           </p>
         </RevealMotion>
 
@@ -115,12 +115,12 @@ const RevealMotion = defineComponent<RevealProps>({
 
 // 文案内容：保持中性，便于替换
 const features = [
-  { title: "极简设计", desc: "去除干扰，聚焦信息与层次。" },
-  { title: "响应布局", desc: "桌面/移动端一致的体验。" },
-  { title: "即插即用", desc: "替换文字与链接即可上线。" },
-  { title: "轻量动画", desc: "只在需要处出现的动效。" },
-  { title: "DaisyUI 组件", desc: "开箱即用的优雅样式。" },
-  { title: "Tailwind 原子化", desc: "一致、可维护的样式体系。" },
+  { title: "智能情感识别", desc: "精准识别文本中的积极、消极、中性情绪。" },
+  { title: "多维度分析报告", desc: "提供情感倾向、关键词、置信度等详细报告。" },
+  { title: "批量文件处理", desc: "支持CSV文件批量上传分析，高效便捷。" },
+  { title: "历史记录管理", desc: "轻松查看和管理所有分析记录。" },
+  { title: "直观数据可视化", desc: "图表展示情感分布，洞察用户情绪。" },
+  { title: "API接口集成", desc: "提供稳定API，方便第三方系统接入。" },
 ];
 </script>
 
